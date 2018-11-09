@@ -12,6 +12,8 @@ ADD 0001-WIP-stats-page-URL-change.patch /usr/src/gdnsd-${GDNS_VER}/
 
 RUN apk update \
 && apk add ca-certificates \
+&& apk add ca-certificates wget \
+&& apk add openssl \
 && update-ca-certificates \
 && apk add gcc g++ make patch file openssl ${GDNS_BUILD_DEPENDENCY} \
 && addgroup -S -g 101 gdnsd \
