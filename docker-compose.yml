@@ -8,7 +8,7 @@ services:
     restart: always
     network_mode: "bridge"
     volumes:
-      - /etc/gdnsd/:/etc/gdnsd/
+      - ./conf/:/etc/gdnsd/
     build:
       context: .
       args:
