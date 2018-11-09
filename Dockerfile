@@ -5,7 +5,7 @@ MAINTAINER Baptiste Assmann <bedis9@gmail.com>
 
 ARG GDNS_VER=
 
-ENV GDNS_OPT="--prefix=/ --datarootdir=/usr"  GDNS_BUILD_DEPENDENCY="libev perl perl-libwww ragel libev libev-dev libmaxminddb-dev"
+ENV GDNS_OPT="--prefix=/ --datarootdir=/usr"  GDNS_BUILD_DEPENDENCY="libev perl perl-libwww ragel libev libev-dev libmaxminddb libmaxminddb-dev"
 ENV DEL_PKGS="libev-dev gcc g++ patch file openssl" RM_DIRS="/usr/src/* /var/cache/apk/*" 
 
 ADD 0001-WIP-stats-page-URL-change.patch /usr/src/gdnsd-${GDNS_VER}/
