@@ -8,8 +8,8 @@ services:
     restart: always
     network_mode: "bridge"
     volumes:
-      - ./conf/:/etc/gdnsd/
+      - /etc/gdnsd/:/etc/gdnsd/
     build:
       context: .
       args:
-        GDNS_VER: 2.2.4
+        GDNS_VER: 2.3.1
